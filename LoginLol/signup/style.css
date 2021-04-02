@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --greyone: #696969;
+    --redone: #D13639;
+    --redtwo: #dd4e50;
+    --inputcolor: #dfdddd;
+}
+
+/* Imagem */
+section{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    display:flex;
+ }
+
+ 
+section .formSign{
+    position:relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .formSign:before{
+    content:'';
+    position: left;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+}
+
+section .formSign img{
+    position: absolute;
+    top:0;
+    right: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Corpo */
+section .totalSign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+section .totalSign .formSign{
+    width: 50%;
+}
+
+/* Sign Up texto */
+
+section .totalSign .formSign h2{
+    text-align: center;
+    width: 350px; 
+    margin-left: auto;
+    margin-right: auto; 
+    color:var(--greyone);
+    font-weight: 600;
+    font-size:2em;
+    margin-top: 110px;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform:uppercase;  
+}
+
+/* Input text */
+
+section .totalSign .formSign .inputSu{
+    margin-bottom:20px;
+}
+
+section .totalSign .formSign .inputSu span{
+    font-size: 16px;
+    margin-bottom:5px;
+    display:  inline-block;
+    color:var(--greyone); 
+    font-weight: 300;
+    font-size:16px;
+    letter-spacing: 1px;
+}
+
+section .totalSign .formSign .inputSu input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size:16px;
+    letter-spacing: 1px;
+    color:var(--greyone);
+    background: var(--inputcolor);
+    border-radius: 10px;
+}
+
+/* Botão sign in */
+section .totalSign .formSign .inputSu input[type="submit"]{
+    background:var(--redone);
+    color:#fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+section .totalSign .formSign .inputSu input[type="submit"]:hover{
+    background: var(--redtwo);
+}
+
+/*Already have an account */
+
+section .totalSign .formSign .inputSu p{
+    color:var(--greyone);
+}
+
+section .totalSign .formSign .inputSu p a{
+    color:var(--redone);
+}
